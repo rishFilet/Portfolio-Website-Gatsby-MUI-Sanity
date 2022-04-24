@@ -27,7 +27,7 @@ function Hero() {
           alttext
           image {
             asset {
-              gatsbyImageData
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }

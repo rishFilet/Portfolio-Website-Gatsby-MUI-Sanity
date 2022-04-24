@@ -5,9 +5,11 @@ html {
 
 body {
   font-size: 15px;
-  background-color: '#202026';
+  background-color: #202026;
   font-family: 'Roboto';
   justify-content: center;
   align-items: center;
   display: flex;
+  height: 100vh;
+  width: 100vw;
 }
