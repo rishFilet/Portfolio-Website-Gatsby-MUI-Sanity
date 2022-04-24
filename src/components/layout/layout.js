@@ -4,6 +4,7 @@ import { ThemeProvider, makeStyles } from '@mui/styles';
 import theme from '@styles';
 import Navbar from '../Navbar/Navbar';
 import '@styles/global.css';
+import SEO from './seo';
 
 const useGlobalStyles = makeStyles({
   '@global': {
@@ -19,7 +20,7 @@ function Layout({ children }) {
   useGlobalStyles();
   return (
     <main>
-      <title>Rishi Khan Portfolio Website</title>
+      <SEO />
       <ThemeProvider theme={theme}>
         <Navbar />
         {children}

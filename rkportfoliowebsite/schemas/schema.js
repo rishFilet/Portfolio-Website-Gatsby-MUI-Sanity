@@ -12,6 +12,7 @@ import author from './author';
 import section from './section';
 import socialIcons from './socialIcons';
 import interestIcons from './interestIcons';
+import config from './config';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,5 +32,6 @@ export default createSchema({
     section,
     socialIcons,
     interestIcons,
+    config,
   ]),
 });

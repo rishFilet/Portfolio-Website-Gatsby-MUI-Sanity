@@ -10,9 +10,9 @@ function Navbar() {
       <LogoContainer>
         <Logo />
       </LogoContainer>
-      <NavItemsContainer>
+      {/* <NavItemsContainer>
         <NavItem>Home</NavItem>
-      </NavItemsContainer>
+      </NavItemsContainer> */}
     </Container>
   );
 }
