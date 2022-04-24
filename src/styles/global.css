@@ -6,7 +6,7 @@ html {
 body {
   font-size: 15px;
   background-color: #202026;
-  font-family: 'Roboto';
+  font-family: -apple-system, Roboto, sans-serif, serif;
   justify-content: center;
   align-items: center;
   display: flex;
