@@ -39,6 +39,7 @@ function Interests({ interests }) {
               <IconTooltip
                 TransitionComponent={Fade}
                 disableFocusListener
+                enterTouchDelay={50}
                 title={interest.text}
               >
                 <div>
