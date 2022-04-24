@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { getImage } from 'gatsby-plugin-image';
 
 function SEO() {
   const dataQuery = useStaticQuery(graphql`
@@ -25,7 +25,8 @@ function SEO() {
       title, description, url, type, image,
     },
   } = dataQuery;
-  console.log(dataQuery);
+
+  const shareImage = getImage(image);
 
   return (
     <Helmet encodeSpecialCharacters defaultTitle={title} defer={false}>
@@ -48,7 +49,7 @@ function SEO() {
       <meta property="og:title" content={title} />
       <meta property="og:url" content={url} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={<GatsbyImage image={image} />} />
+      <meta property="og:image" content={shareImage} />
       <meta property="og:type" content={type} />
 
       {/* multiple link elements */}

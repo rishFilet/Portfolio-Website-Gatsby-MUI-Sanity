@@ -14,7 +14,7 @@ function SectionTitleContainer({ title, content }) {
         justifyContent: 'flex-start',
         typography: 'h1',
         color: '#fff',
-        borderRight: '3px solid #fff',
+        borderRight: { lg: '3px solid #fff', sm: 'none' },
         paddingLeft: { lg: 0, md: '60px', xs: '40px' },
         paddingRight: { md: '60px', xs: '40px' },
         fontSize: { xxl: '48px', xs: '38px' },

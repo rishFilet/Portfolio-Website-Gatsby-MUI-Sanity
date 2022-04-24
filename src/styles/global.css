@@ -1,7 +1,15 @@
+
 html {
    scroll-behavior: smooth;
 }
 
 body {
   font-size: 15px;
+  background-color: #202026;
+  font-family: -apple-system, Roboto, sans-serif, serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
