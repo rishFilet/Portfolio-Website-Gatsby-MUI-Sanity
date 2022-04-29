@@ -13,6 +13,7 @@ function Interests({ interests }) {
     <>
       {interests.map((interest) => (
         <Box
+          key={interests.indexOf(interest)}
           sx={{
             typography: 'h2',
             display: 'flex',
@@ -60,7 +61,9 @@ function Interests({ interests }) {
 export default Interests;
 
 Interests.propTypes = {
-  interests: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  interests: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+  ).isRequired,
 };
 
 const InterestText = withTheme(

@@ -30,8 +30,10 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#202026',
+      light: '#fff',
     },
     secondary: { main: '#F9A828' },
+    text: { light: '#fff', dark: '#000' },
   },
   breakpoints: {
     values: {

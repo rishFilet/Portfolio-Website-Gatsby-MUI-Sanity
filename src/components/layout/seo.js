@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
+import { getSrc } from 'gatsby-plugin-image';
 
 function SEO() {
   const dataQuery = useStaticQuery(graphql`
@@ -26,7 +26,7 @@ function SEO() {
     },
   } = dataQuery;
 
-  const shareImage = getImage(image);
+  const shareImage = getSrc(image);
 
   return (
     <Helmet encodeSpecialCharacters defaultTitle={title} defer={false}>
@@ -106,6 +106,12 @@ function SEO() {
         type="image/png"
         sizes="16x16"
         href="/favicon-16x16.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="512x512"
+        href="/favicon-512x512.png"
       />
       <link rel="manifest" href="/manifest.json" />
       <meta name="theme-color" content="#ffffff" />
