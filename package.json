@@ -12,7 +12,7 @@
     "start": "run-p start:**",
     "start:app": "concurrently --kill-others \"cd rkportfoliowebsite && sanity start\" \"gatsby develop\"",
     "start:lambda": "netlify-lambda serve src/lambda",
-    "build": "gatsby build && netlify-lambda build src/lambda",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "build_serve": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
